@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logout {
+    color: red;
+}
+
+.pro-detail {
+    position: absolute;
+    z-index: 1;
+    background-color: #e8e8e8;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width:866px) {
+
+    nav button,
+    .for-d-none {
+        display: none;
+    }
+
+    .catagory {
+        justify-content: center;
+    }
+}
+
+@media (max-width:420px) {
+    .nav-user-like {
+        gap: 20px;
+    }
+}
+
+footer a {
+    cursor: pointer;
+}
+
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px 0px
+}
+
+.breadcrumbs>* {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+    display: none;
+}
+
+.breadcrumbs .crumb a {
+    color: #ddd;
+}
+
+.input {
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(224, 225, 226) 0%, rgb(195, 197, 200) 100%);
+    border: none;
+    color: #9c9b9b;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(191, 197, 202) 100%);
+}
+
+.nav-serch {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        margin-left: 20px;
+    }
+    .navs {
+        height: 80px;
+    }
+    .profile {
+        width:  100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-user-like {
+        position: absolute;
+        margin-left: -310px;
+        margin-top: 70px;
+    }
+
+    .nav-button {
+        position: relative;
+        margin-left: -310px;
+    }
+
+    .navs {
+        height: 80px;
+    }
+    .nav-logo {
+        margin-left: 115px;
+    }
+}
+
+.hom {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: solid 2px black;
+}
+
+
+.b {
+    border: solid 2px rgb(66, 63, 63);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.c {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.d {
+    border: solid 2px rgb(66, 63, 63);
+    border-radius: 50%;
+    padding: 5px 6px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.ant-input-password-icon {
+    font-size: 20px;
+    position: relative;
+    margin: -23px 0px 0px 335px;
+}
+.imgpoint {
+    background: linear-gradient(135deg, rgb(1, 70, 139) 0%, rgb(0, 0, 103) 100%); 
+}
+
+.fa-brands {
+    font-size: 20px;
+    
+}
